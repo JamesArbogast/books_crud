@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Book</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head> 
+<body>
+    <div id="author-create">
+        <h1>Title: {{book['title']}}</h1>
+        <form action="/book/{{book['id']}}/add_fave" method="post">
+                <select name="author_id" id="dropdown">
+                    {% for authors in all_authors %}
+                        <option value="{{authors['id']}}">{{authors['name']}}</option>
+                    {% endfor %}
+                </select>
+            <button>Add</button>
+        </form>
+    </div>
+    <div>
+        <h1 id="author-info">Favorited By</h1>
+        <table id="faves-table"> 
+            <thead>
+                <th>Authors</th>
+            </thead>
+            {% for faves in all_faves %}
+                <tr>
+                    <td>{{faves['name']}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

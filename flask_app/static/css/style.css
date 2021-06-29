@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    margin: 15px;
+}
+.dflex {
+    display: flex;
+}
+
+.dflex col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.user-table {
+    border: black 3px solid;
+    font-size: 18px;
+    margin: 5px;
+}
+.user-table td{
+    border: bl  ack 1px solid;
+    padding: 10px;
+    
+}
+.box {
+    border: black 3px solid;
+    background-color: lightblue;
+    margin: 20px;
+}
+.box p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+#update-form {
+    margin: 10px;
+    font-size: 20px;
+}
+
+button {
+    margin: 20px;
+    font-size: 20px;
+    border: black 3px solid;
+    padding: 3px;
+    box-shadow: black 3px 3px;
+}
+#red-button {
+    background-color: red;
+    color: white;
+    border: black 3px solid;
+}
+fieldset {
+    margin: 5px;
+    font-size: 20px
+}
+fieldset input{
+    margin: 5px;
+    font-size: 20px
+}
+#bottom-buttons {
+    margin-left: 10px;
+}
+#delete {
+    color: red;
+}
+#author-table {
+    background-color: lightblue;
+    border: black 3px solid;
+    width: 100%;
+    padding: 0px;
+    box-shadow: black 3px 3px;
+}
+#author-table td {
+    border: black 3px solid;
+    padding: 10px;
+    margin: 0px;
+}
+#author-info {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#author-create {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#faves-table {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    background-color: lightblue;
+    text-align: left;
+}
+
+#faves-table td {
+    border: black 3px solid;
+    padding: 10px;
+    margin: 0px;
+}
+#dropdown {
+    margin: 20px;
+    font-size: 20px;
+    border: black 3px solid;
+    padding: 3px;
+    box-shadow: black 3px 3px;
+}
